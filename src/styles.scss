@@ -1,13 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   overflow: hidden; /* Prevents scrolling */
 }
 
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 header {
@@ -28,7 +28,11 @@ section {
   flex: 1; /* This makes the section take up the remaining space */
   text-align: center;
   display: flex;
+  overflow-y: auto;
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   height: 100%;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
